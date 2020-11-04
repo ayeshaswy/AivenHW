@@ -11,7 +11,7 @@ Requirement:
 2. pip
 
 
-Download "AivenHW" package from "https://github.com/ayeshaswy/AivenHW".
+Download "AivenHW" package from "https://github.com/ayeshaswy/AivenHW/tree/main/package".
 
 Execute: 
 $$> pip install <path to AivenHW package>
