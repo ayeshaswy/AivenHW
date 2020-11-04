@@ -34,59 +34,59 @@ api_version=2.6.0
 ## Usage
 
 
-from AivenHW.Producer import Producer
-Producer(msg_queue, queue_lock, topic, properties_file)
+    from AivenHW.Producer import Producer
+    Producer(msg_queue, queue_lock, topic, properties_file)
 
-where:
+    where:
 
-	msg_queue: 	The message queue for the producer to read messages from, to send to Kafka broker.
-    queue_lock: The lock to acquire while using the queue.
-    topic: 		The topic to send the messages to, at the kafka broker.
-    properties_file: The properties file to use to configure the producer. Provide absolute path.
+        msg_queue: 	The message queue for the producer to read messages from, to send to Kafka broker.
+        queue_lock: The lock to acquire while using the queue.
+        topic: 		The topic to send the messages to, at the kafka broker.
+        properties_file: The properties file to use to configure the producer. Provide absolute path.
 	
-Type: class
-Base class: threading.thread
-public methods: Base class public methods, stop()
+    Type: class
+    Base class: threading.thread
+    public methods: Base class public methods, stop()
 
 
-from AivenHW.Consumer import Consumer
-Consumer(msg_queue, queue_lock, topic, properties_file)
+    from AivenHW.Consumer import Consumer
+    Consumer(msg_queue, queue_lock, topic, properties_file)
 
-where:
+    where:
 
-	msg_queue: 	The message queue to enqueue the incoming messages from Kafka broker.
-    queue_lock: The lock to acquire while using the queue.
-    topic: 		The topic to subscribe to at the kafka broker.
-    properties_file: The properties file to use to configure the consumer. Provide absolute path.
+        msg_queue: 	The message queue to enqueue the incoming messages from Kafka broker.
+        queue_lock: The lock to acquire while using the queue.
+        topic: 		The topic to subscribe to at the kafka broker.
+        properties_file: The properties file to use to configure the consumer. Provide absolute path.
 	
-Type: class
-Base class: threading.thread
-public methods: Base class public methods, stop()
+    Type: class
+    Base class: threading.thread
+    public methods: Base class public methods, stop()
 
 
-from AivenHW.DBWriter import DBWriter
-DBWriter(msg_queue, queue_lock, uri, insert_query)
+    from AivenHW.DBWriter import DBWriter
+    DBWriter(msg_queue, queue_lock, uri, insert_query)
 
-where:
+    where:
 
-	msg_queue: 	The message queue to get the messages from.
-	queue_lock: The lock to acquire while using the queue.
-	uri: 		The URI of the DB in which messages are to be written.
-	param insert_query: The format of the INSERT command to execute.
+        msg_queue: 	The message queue to get the messages from.
+        queue_lock: The lock to acquire while using the queue.
+        uri: 		The URI of the DB in which messages are to be written.
+        param insert_query: The format of the INSERT command to execute.
 	
-Type: class
-Base class: threading.thread
-public methods: Base class public methods, stop()
+    Type: class
+    Base class: threading.thread
+    public methods: Base class public methods, stop()
 	
 
-from AivenHW.Properties import load_properties
-load_properties(properties_file)
+    from AivenHW.Properties import load_properties
+    load_properties(properties_file)
 
-where:
+    where:
 	
-	properties_file: properties_file: The file to load the properties from. Provide absolute path.
-	
-Type: method
+        properties_file: properties_file: The file to load the properties from. Provide absolute path.
+
+    Type: method
 
 
 ## Unit tests
