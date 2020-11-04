@@ -14,7 +14,7 @@ Requirement:
 Download "AivenHW" package from "https://github.com/ayeshaswy/AivenHW/tree/main/package".
 
 Execute: 
-	$$> pip install path_to_AivenHW_package
+        pip install path_to_AivenHW_package
 
 The above command will also try to install the dependent packages:
 1. jproperties 
@@ -95,5 +95,5 @@ Unit tests can be found in the directory AivenHW/tests.
 The tests are bare minimum and mostly test success scenrios.
 
 Execute the tests by running the command:
-	$$> python -m unittest consumer_test.py producer_test.py dbwriter_test.py load_properties_test.py
+        python -m unittest consumer_test.py producer_test.py dbwriter_test.py load_properties_test.py
 
